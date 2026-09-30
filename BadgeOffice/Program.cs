@@ -1,6 +1,5 @@
 ﻿
 //Part 1: The Name
-
 Console.Write("What is your full name? ");
 string name = Console.ReadLine();
 string fullName = name.Trim();
@@ -16,3 +15,12 @@ Console.WriteLine("Initials: " + initials.ToUpper());
 Console.WriteLine("Letters in last name: " + lastName.Length);
 Console.WriteLine("  ");
 
+
+//Part 2: The Numbers
+Random rng = new Random();
+int studentID = rng.Next(100000, 1000000);
+int lockerNum = rng.Next(1, 501);
+Console.WriteLine("  ");
+Console.WriteLine("Student ID: " + studentID);
+Console.WriteLine("Locker: " + lockerNum);
+Console.WriteLine(" "); 

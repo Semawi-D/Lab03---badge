@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BadgeOffice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb88f118824b3626d858f773b8db9a2d079b67e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BadgeOffice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BadgeOffice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
