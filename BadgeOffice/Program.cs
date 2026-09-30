@@ -1,9 +1,20 @@
 ﻿
+/*
+* Name: Semawi Deneke
+* Course: CSCI 1250, Section 001
+* Assignment: Lab 03, The Badge Office
+* Date: September 30, 2026
+* Description: Builds a student badge from a name, two random assignments,
+* and the walking distance to a first class.
+*/
+
+
+
 //Part 1: The Name
 using System.Runtime.InteropServices.Marshalling;
 using System.Security;
 
-Console.Write("What is your full name? ");
+Console.Write("What is the full name? ");
 string name = Console.ReadLine();
 string fullName = name.Trim();
 int spacePosition= fullName.IndexOf(" ");
