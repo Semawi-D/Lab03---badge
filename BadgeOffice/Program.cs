@@ -1,5 +1,6 @@
 ﻿
 //Part 1: The Name
+using System.Runtime.InteropServices.Marshalling;
 using System.Security;
 
 Console.Write("What is your full name? ");
@@ -43,8 +44,23 @@ double distance = Math.Sqrt(Math.Pow(classX - dormX, 2) + Math.Pow(classY - dorm
 double time = distance/speed;
 int timeWhole = Convert.ToInt32(Math.Round(time, 0));
 int minute = timeWhole/60;
-int second = timeWhole%60;
+int second = timeWhole % 60;
 Console.WriteLine(" ");
 Console.WriteLine("Distance: " + Math.Round(distance, 1) + " feet");
 Console.WriteLine("Walk time: " + minute + " minutes " + second + " seconds");
+Console.WriteLine("  ");
+
+
+//Part 4: The Badge
+int checkDigit = studentID % 9;
+string outline = "=";
+Console.WriteLine(outline.PadRight(33,'='));
+Console.WriteLine("".PadRight(8) + "ETSU STUDENT BADGE");
+Console.WriteLine(outline.PadRight(33,'='));
+Console.WriteLine("NAME".PadRight(10) + fullName.ToUpper());
+Console.WriteLine("USERNAME".PadRight(10) + userName.ToLower());
+Console.WriteLine("ID".PadRight(10) + studentID + "-" + checkDigit);
+Console.WriteLine("LOCKER".PadRight(10) + lockerNum);
+Console.WriteLine("WALK".PadRight(10) + minute + " min " + second + " sec");
+Console.WriteLine(outline.PadRight(33,'='));
 Console.WriteLine("  ");
